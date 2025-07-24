@@ -123,3 +123,8 @@ http://experinment.local/2025/07/23/
 http://experinment.local/2025/07/
 
 http://experinment.local/2025/
+
+
+asso ciates of array
+example 
+'cat'=>'meow'
