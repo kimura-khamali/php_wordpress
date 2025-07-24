@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"name": "build",
+			"path": "../../../../../../../Desktop/ghgh/university-static/build"
+		},
+		{
+			"name": "css",
+			"path": "../../../../../../../Desktop/ghgh/university-static/css"
+		},
+		{
+			"name": "images",
+			"path": "../../../../../../../Desktop/ghgh/university-static/images"
+		},
+		{
+			"name": "src",
+			"path": "../../../../../../../Desktop/ghgh/university-static/src"
+		},
+		{
+			"name": "FIictional0university0theme",
+			"path": "."
+		}
+	],
+	"settings": {}
+}

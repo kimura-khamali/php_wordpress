@@ -1,3 +1,34 @@
+function university_features() {
+    register_nav_menu('headerMenuLocation', 'Header Menu Location');
+    register_nav_menu('footerLocationOne', 'Footer Location One');
+    register_nav_menu('footerLocationTwo', 'Footer Location Two');
+    add_theme_support('title-tag');
+   
+}
+
+
+header
+ <nav class="main-navigation">
+            <?php 
+            wp_nav_menu(array(
+              'theme_location' => 'headerMenuLocation',
+            ));
+            ?>
+          <!--  <ul>
+
+              <li><a href="<?php echo site_url('/about-us'); ?>">About Us</a></li>
+              <li><a href="#">Programs</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Campuses</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>-->
+          </nav>
+
+
+
+
+
+          footer
 <footer class="site-footer">
       <div class="site-footer__inner container container--narrow">
         <div class="group">
@@ -13,25 +44,33 @@
               <h3 class="headline headline--small">Explore</h3>
               <nav class="nav-list">
 
-
-               <ul>
+              <?php
+              wp_nav_menu(array(
+                'theme_location' => 'footerLocationOne',
+              ));
+              ?>
+              <!--  <ul>
                   <li><a href="<?php echo site_url('/about-us'); ?>">About Us</a></li>
                   <li><a href="#">Programs</a></li>
                   <li><a href="#">Events</a></li>
                   <li><a href="#">Campuses</a></li>
-                </ul>
+                </ul>-->
               </nav>
             </div>
 
             <div class="site-footer__col-three">
               <h3 class="headline headline--small">Learn</h3>
               <nav class="nav-list">
-          
-             <ul>
+                <!--    <?php
+           wp_nav_menu(array(
+                'theme_location' => 'footerLocationtwo',
+              ));
+              ?>-->
+              <!--  <ul>
                   <li><a href="#">Legal</a></li>
                   <li><a href="<?php echo site_url('/privacy-policy'); ?>">Privacy</a></li>
                   <li><a href="#">Careers</a></li>
-                </ul>
+                </ul>-->
               </nav>
             </div>
           </div>
@@ -67,3 +106,20 @@
 <?php wp_footer(); ?>
 </body>
 </html>
+
+
+archive.php
+
+<?php if(is_category()) {
+       single_cat_title();  }
+       
+            if(is_author()) {
+echo 'Post by '; the_author(); }           
+            ?>
+
+
+http://experinment.local/2025/07/23/
+
+http://experinment.local/2025/07/
+
+http://experinment.local/2025/
